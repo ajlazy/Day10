@@ -1,0 +1,48 @@
+package com.capgemini.controller;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class EmployeeServlet
+ */
+@WebServlet("/employee")
+public class EmployeeServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	ArrayList<Employee> employee=new ArrayList<>();
+	Employee employee1=new Employee(101,"jon",1000,"CSE");
+	Employee employee2=new Employee(102,"jane",1000,"CSE");
+	Employee employee3=new Employee(103,"doe",1000,"CSE");
+	Employee employee4=new Employee(104,"sachin",1000,"CSE");
+	Employee employee5=new Employee(105,"kye",1000,"CSE");
+	employee.add(employee1);
+	employee.add(employee2);
+	employee.add(employee3);
+	employee.add(employee4);
+	employee.add(employee5);
+	
+
+	
+	
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public EmployeeServlet() {
+        super();
+    }
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
+
+}

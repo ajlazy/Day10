@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Enter Details</title>
+</head>
+<body>
+<h1>Card details</h1>
+<form action="CreditCard" method="post">
+<label>Enter Name on Card</label>
+<input type="text" name="Name on card"/>
+<br>
+<label>Enter CVV number</label>
+<input type="password" maxlength="3" name="cvv" pattern="[0-9]{3}" />
+</form>
+
+</body>
+</html>
