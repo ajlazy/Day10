@@ -17,6 +17,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		for(Employee employee: employees)
 			if(employee.getEmployeeId()==employeeId)
 				return employee;
+		return null;
 			
 	}
 
@@ -29,7 +30,10 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		        return true;
 	}
 			else return false;
-
+		return false;
+	}
+	
+	
 	@Override
 	public boolean addEmployee(Employee employee) {
 
@@ -39,9 +43,22 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	@Override
 	public Employee updateEmployee(Employee employee) {
-		// TODO Auto-generated method stub
-		return null;
+		return employee;
+
+//		for(Employee employee:employees)
+//		{
+//			if()}
+//		}
+	
 	}
+
+	@Override
+	public List<Employee> findAllEmployees() {
+		return employees;
+	}
+
+	
+	
 	
 	
 	
